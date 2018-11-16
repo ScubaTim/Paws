@@ -1,12 +1,86 @@
 * {
-  font-family: futura;
-}
-
-html, h1, h2, h3, p, a, ul, li {
   margin: 0;
   padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+.pageHeader {
+  background-color: #021F61;
+  height: 26vh;
+  width: 100%;
+  color: white;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.leftColumn, .rightColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  line-height: 2rem;
+}
+.leftColumn li, .rightColumn li {
+  list-style: none;
+}
+.leftColumn p, .rightColumn p {
+  text-align: end;
+}
+
+svg {
+  height: 25vh;
+  width: 25vw;
+}
+
+.buttonList {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttonList a {
+  color: white;
+  font-size: 1.8rem;
+}
+.buttonList a:hover {
+  color: #00A7E1;
+}
+.buttonList i {
+  padding: 10px 10px;
+}
+
+.bigNav {
+  height: 5vh;
+}
+.bigNav ul {
+  background-color: #021F61;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
+}
+.bigNav ul a {
   text-decoration: none;
-  font-style: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 5px;
+}
+.bigNav ul a:hover {
+  background-color: #00A7E1;
+  padding: 10px 10px;
+}
+.bigNav ul a:active {
+  background-color: white;
+  color: #00A7E1;
 }
 
 /*# sourceMappingURL=style.css.map */

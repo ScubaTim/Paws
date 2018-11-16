@@ -1,0 +1,12 @@
+* {
+  font-family: futura;
+}
+
+html, h1, h2, h3, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

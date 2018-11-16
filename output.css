@@ -1,0 +1,53 @@
+* {
+  font-family: futura;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+html, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-style: none;
+}
+
+div {
+  padding: 1.5rem 0;
+}
+
+#page-header {
+  height: 34rem;
+  padding: 0 1rem;
+  background-color: #6b5b95;
+  color: white;
+  display: flex;
+}
+#page-header #hero {
+  align-self: flex-end;
+}
+#page-header h1 {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  padding: 4vh 10vw;
+}
+
+footer {
+  background-color: #6b5b95;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10vw;
+}
+
+/*# sourceMappingURL=output.css.map */

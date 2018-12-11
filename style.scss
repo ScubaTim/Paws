@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   body {
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
+      width: 100%;
       font-family: 'Roboto', sans-serif;
 
   }
@@ -15,7 +16,7 @@
     .pageHeader {
         background-color: #021F61;
         height: 26vh;
-        width: 100%;
+        //width: 100%;
         color: white;
     }
     .gridContainer {
@@ -25,7 +26,7 @@
     .leftColumn, .rightColumn {
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin: 2%;
         line-height: 2rem;
         li {
             list-style: none;

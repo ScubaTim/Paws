@@ -1,0 +1,8 @@
+
+.megaGrid {
+grid-template-areas:
+    "header",
+    "navigation",
+    "mobileHero",
+    "imageSlider";
+}

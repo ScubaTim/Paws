@@ -1,97 +1,92 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Futura-CondensedMedium";
     box-sizing: border-box;
-  }
-  
-  body {
-      height: 100%;
-      width: 100%;
-      font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+$dark-blue: #021F61;
+$white: #fff;
+$light-blue: #00A7E1;
 
-  }
-  
-  //Header
-  
-    .pageHeader {
-        background-color: #021F61;
-        height: 26vh;
-        //width: 100%;
-        color: white;
-    }
-    .gridContainer {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    }
-    .leftColumn, .rightColumn {
-        display: flex;
-        flex-direction: column;
-        margin: 2%;
-        line-height: 2rem;
-        li {
-            list-style: none;
-        }
-        p {
-            text-align: end;
-        }
-    }
-    //logo
-    svg {
-        height: 25vh;
-        width: 25vw;
-    }
+.footer-grid-container {
+    width: 100%;
+    background-color: $dark-blue;
+    color: $white;
+    display: grid;
+    grid-row-gap: 2vw;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "map"
+        "numb"
+        "hours"
+        "icons"
+        "copy";
+}
+.footer-header {
+    display: none;
+    grid-area: title;
+    background-color: $white;
+    color: $dark-blue;
+    font-size: 54px;
+    letter-spacing: 10px;
+    justify-content: bottom;
+} 
 
-    //social media
-    .buttonList {
-        display: flex;
-        justify-content: flex-end;
-        a {
-            color: white;
-            font-size: 1.8rem;
-        }
-        a:hover {
-            color: #00A7E1;
+.footer-numbers {
+    grid-area: numb;
 
-        }
-        i {
-            padding: 10px 10px;
-        }
-    }
-
-
-
-  //navbar
-  .bigNav {
-      height: 5vh;
-
-      ul {
-        background-color: #021F61;
-        display: flex;
-        justify-content: space-between;
+}
+.footer-map {
+    grid-area: map;
+}
+.footer-mobile-flexcont {
+    display: flex;
+    justify-content: space-evenly
+}
+.footer-hours {
+    grid-area: hours;
+    ol {
         list-style: none;
-        padding: 10px;
+    }
+}
+.footer-location {
+    grid-area: location;
+}
+.footer-icons {
+    grid-area: icons;
+    text-align: center;
+    i {
+        font-size: 40px;
+        padding: 3vh 3vw;
+    }
+    i:hover {
+        color: $light-blue;
+        cursor: pointer;
+    }
+    i:focus {
+        color: $light-blue;
+        cursor: pointer;
+    }
+}
+.footer-site-map {
+    display: none;
+    grid-area: siteMap;
+    margin: 20px;
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 2vh;
+        list-style: none;
+        line-height: 30px;
+        
+    }
+}
+.footer-copyrite {
+    grid-area: copy;
+    text-align: center;
+    
+}
 
 
-        a {
-            text-decoration: none;
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 10px;
-            height: 100%;
-            width: 100%;
-            padding: 10px 10px;
-            margin: 5px;
-
-        }
-        a:hover {
-            background-color: #00A7E1;
-            padding: 10px 10px;
-
-        }
-        a:active {
-            background-color: white;
-            color:#00A7E1;
-        }
-      }
-      
-  }

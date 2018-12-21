@@ -1,53 +1,89 @@
 * {
-  font-family: futura;
-}
-
-body {
-  margin: 0;
-  font-size: 16px;
-}
-
-html, p, a, ul, li {
   margin: 0;
   padding: 0;
+  font-family: "Futura-CondensedMedium";
+  box-sizing: border-box;
   text-decoration: none;
-  font-style: none;
 }
 
-div {
-  padding: 1.5rem 0;
+.footer-grid-container {
+  width: 100%;
+  background-color: #021F61;
+  color: #fff;
+  display: grid;
+  grid-row-gap: 2vw;
+  grid-template-columns: 1fr;
+  grid-template-areas: "map" "numb" "hours" "icons" "copy";
 }
 
-#page-header {
-  height: 34rem;
-  padding: 0 1rem;
-  background-color: #6b5b95;
-  color: white;
-  display: flex;
-}
-#page-header #hero {
-  align-self: flex-end;
-}
-#page-header h1 {
-  padding: 0;
-  margin: 0;
-}
-
-nav {
+.footer-header {
   display: none;
+  grid-area: title;
+  background-color: #fff;
+  color: #021F61;
+  font-size: 54px;
+  letter-spacing: 10px;
+  justify-content: bottom;
 }
 
-main {
-  padding: 4vh 10vw;
+.footer-numbers {
+  grid-area: numb;
 }
 
-footer {
-  background-color: #6b5b95;
-  color: white;
+.footer-map {
+  grid-area: map;
+}
+
+.footer-mobile-flexcont {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 10vw;
+  justify-content: space-evenly;
+}
+
+.footer-hours {
+  grid-area: hours;
+}
+.footer-hours ol {
+  list-style: none;
+}
+
+.footer-location {
+  grid-area: location;
+}
+
+.footer-icons {
+  grid-area: icons;
+  text-align: center;
+}
+.footer-icons i {
+  font-size: 40px;
+  padding: 3vh 3vw;
+}
+.footer-icons i:hover {
+  color: #00A7E1;
+  cursor: pointer;
+}
+.footer-icons i:focus {
+  color: #00A7E1;
+  cursor: pointer;
+}
+
+.footer-site-map {
+  display: none;
+  grid-area: siteMap;
+  margin: 20px;
+}
+.footer-site-map ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 2vh;
+  list-style: none;
+  line-height: 30px;
+}
+
+.footer-copyrite {
+  grid-area: copy;
+  text-align: center;
 }
 
 /*# sourceMappingURL=output.css.map */

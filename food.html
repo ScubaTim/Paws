@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to Paws Pet Boutique! We are a family-owned Pet Store located in Tallahassee. We sell only the highest quality Dog Food and Cat Food available sourced from countries with impeccable safety and quality standards. Nutrition is vital to a long and active life for your pet, and we believe it should be affordable for everyone. Paws beats the prices of most popular online and big-box pet store chains.">
+    <link rel="stylesheet" type="text/css" href="output.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+    <title>Paws | Dog & Cat Food</title>
+</head>
+<body>
+<div class="wrapper">
+    <!--Begin Header-->
+    <!--Header For XL Screens-->
+    <header class="some-padding center hidden-at-small">
+        <div class="flex-column header-col margin-top">
+            <h3>850 - 222 - 7297</h3>
+            <div class="header-icons">
+                <a href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><i class="fab fa-yelp"></i></a> 
+                <a href="https://www.facebook.com/pawsPetBoutiqueTallahasse/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <img class="paws-logo margin-top" src="pawsLogo.svg">
+        <div class="flex-column header-col  margin-top" id="address-full-screen">
+                <h3 class="justify-right">3491 Thomasville Rd<br>Tallahassee FL</h3>
+        </div>
+    </header>   
+    <div class="nav flex-row neg-top-margin hidden-at-small" id="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="grooming.html">Grooming</a></li>
+            <li><a href="http://www.paws.ws/dog-tags-sm.html">Tags</a></li>
+        </ul>
+    </div>
+    <!--Header for Small Screens Only-->
+    <header class="center hide-at-large some-side-padding">
+            <div class="flex-row sticky-nav space-around full-width">
+                    <div class="mobile-nav">
+                        <span class="open-slide">
+                            <a href="#" class="btn-open" onclick="openSlideMenu()"><i class="mobile-btn fas fa-bars" id="mobile-hamburger"></i></a>
+                        </span>
+                        <div class="side-nav" id="side-menu">
+                            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                            <a href="index.html">Home</a>
+                            <a href="food.html">Food</a>
+                            <a href="grooming.html">Grooming</a>
+                            <a href="http://www.paws.ws/dog-tags-sm.html">Tags</a>
+                            <a href="#phone">Contact Us</a>
+                        </div>
+                    </div>
+                    <img  class="paws-logo" src="pawsLogo.svg" alt = "Paws Pet Boutique logo">
+                <div class="mobile-nav"> 
+                    <span class="open-slide">
+                            <a href="#" class="btn-open" onclick="openSlideMenuSocial()"><i class="mobile-btn fas fa-ellipsis-h" id="mobile-social"></i></a>
+                    </span>
+                    <div class="side-nav" id="side-menu-social">
+                        <a href="#" class="btn-close justify-right" onclick="closeSlideMenuSocial()">&times;</a>
+                        <div class="social-sidenav-flex-cont">
+                            <a class="zero-out" href="https://www.facebook.com/pawsPetBoutiqueTallahasse/"><i class="fab fa-facebook-square"></i></a>
+                            <a class="zero-out" href="https://www.facebook.com/pawsPetBoutiqueTallahasse/"><p class="half-width">Facebook</p></a>
+                        </div>
+                        <div class="social-sidenav-flex-cont">
+                            <a class="zero-out" href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><i class="fab fa-instagram"></i></a>
+                            <a class="zero-out" href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><p class="half-width">Instagram</p></a>  
+                        </div>
+                        <div class="social-sidenav-flex-cont">
+                            <a class="zero-out" href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><i class="fab fa-yelp"></i></a>
+                            <a class="zero-out" href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><p class="half-width">Yelp</p></a>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <h2>850 - 222 - 2797</h2>
+            <p>3491 Thomasville Road<br>Tallahassee, Fl 32309</p>
+        </header>
+    <!--END OF HEADER-->
+    <article class="right some-side-padding slideanim">
+            <div class="heading">
+                <svg class="pawprint-svg" alt = "turquoise paw print" viewBox="0 0 153 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M137.21 85.5586C138.175 87.5524 139.368 89.0966 139.666 91.2914C141.526 99.8698 134.104 107.82 132.858 109.719C124.647 118.669 119.401 114.539 110.54 122.542C103.136 129.345 105.61 133.93 97.7844 139.336C95.9947 140.638 87.6079 146.594 77.9229 143.422C76.2736 142.777 71.0978 141.292 67.4134 136.31C63.2903 131.08 62.9395 125.093 62.8693 122.448C62.4308 114.965 65.5364 114.409 66.098 106.624C66.7999 96.8918 62.2908 95.2053 63.5191 87.2189C64.7474 79.2325 70.4673 74.0803 72.5903 72.6784C74.2747 71.0281 79.205 66.8756 86.6267 66.1606C93.7151 65.5461 94.5396 69.4862 104.681 71.759C115.699 74.5289 117.419 70.5832 125.104 74.3584C126.858 75.3524 132.999 78.8317 137.21 85.5586Z" fill="#00A7E1"/>
+                        <path d="M51.2897 98.5232C62.659 107.28 62.6061 117.958 56.2019 124.459C51.3768 128.961 41.2005 128.983 31.8138 120.771C22.4271 112.559 17.7602 99.4958 21.0589 93.5506C24.7085 86.3572 40.0257 90.1154 51.2897 98.5232Z" fill="#00A7E1"/>
+                        <path d="M24.3581 73.1349C31.4462 86.9909 45.0789 92.3995 51.7637 89.2411C58.0099 85.8342 61.9753 72.4528 54.9925 58.9459C47.9044 45.09 32.8857 36.2913 26.6395 39.6982C20.3933 43.1051 17.7087 59.5275 24.3581 73.1349Z" fill="#00A7E1"/>
+                        <path d="M84.4691 26.4465C95.154 36.5521 93.5923 51.8743 88.4163 57.624C83.5737 63.2732 72.5026 63.9464 61.8176 53.8408C51.1327 43.7352 44.8693 26.5841 49.7119 20.9349C54.8879 15.1852 73.7841 16.3409 84.4691 26.4465Z" fill="#00A7E1"/>
+                        <path d="M97.5578 52.9633C102.119 65.6772 114.296 72.2867 118.524 70.6306C122.753 68.9746 131.982 58.5754 128.859 45.8084C124.683 29.5509 106.454 20.9589 99.7514 25.265C96.1721 27.8677 93.1014 40.5985 97.5578 52.9633Z" fill="#00A7E1"/>
+                </svg>
+                <h2 class="">Best Prices In Town!</h2>
+            </div>
+            <div class="copy">
+                <p>Paws beats out big chain store prices for premium healthy dog and cat foods. Sourced only from trusted companies and countries, we stand by our brands and we offer a wide variety of options for pets of all sizes or with special diets.</p>
+            </div>
+            <div class="image full-width center">
+                <svg class="animal-svg" id="greycat" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 84.7 73.5"><style>.st0{fill:#686a77}.st1{fill:#9ea2b7}.st2{fill:#8aa4dd}.st3{fill:#3e4049}.st4{fill:#fff}</style><path class="st0" d="M0 2.9c-.4 5.6 3.3 17.8 4.5 22.6 2.1 5.4 4 9.9 7.1 12l9-11.4 9-11.4C27 12.2 19.5 8.5 15.8 7 11.8 4.2 8.6 1.3 4 .1 2-.4.2 1 0 2.9z"/><path class="st1" d="M25.5 15.1c-2.7-2.1-6.5-3.9-9.7-5.2-3.3-1.4-4.1-2.1-6.1-3.2C8.3 5.9 4.9 3.4 3.2 3c0 0-.1 0-.1.1v.1c-.3 3.5 1.7 13 3.1 17.2.5 1.5.9 2.9 1.3 4.2C8.8 28 10 31 11.5 33l14-17.9z"/><path class="st0" d="M84.6 2.9c.4 5.6-3.3 17.8-4.5 22.6-2.1 5.4-4 9.9-7.1 12l-9-11.4-9-11.4c2.7-2.5 10.2-6.2 13.9-7.7 4-2.8 7.2-5.7 11.8-6.9 1.9-.5 3.8.9 3.9 2.8z"/><path class="st1" d="M59.2 15.1c2.7-2.1 6.5-3.9 9.7-5.2C72.2 8.5 73 7.8 75 6.7c1.4-.8 4.8-3.3 6.5-3.7 0 0 .1 0 .1.1v.1c.3 3.6-1.8 13.1-3.1 17.3-.5 1.5-.9 2.9-1.3 4.2-1.3 3.4-2.5 6.4-4 8.4l-14-18z"/><path class="st0" d="M23.4 13.5C18.6 19.6-1 46.8 1.4 52.9c15.5 0 26.3 20.6 41.7 20.7 15.8 0 23.8-24.3 41.1-21.3 1.1-6.4-20.1-32.7-24.9-38.7H23.4z"/><path class="st2" d="M67.3 39.5c0 1.3-.3 2.6-.8 3.7-1.2-.6-2.5-1.1-3.9-1.4-1.4-.3-2.9-.5-4.4-.5-1.4 0-2.7.1-4 .4-1.4.3-2.8.8-4 1.3-.5-1.1-.7-2.3-.7-3.5 0-4.9 4-8.9 8.9-8.9s8.9 3.9 8.9 8.9z"/><path class="st3" d="M62.6 41.7c-1.4-.3-2.9-.5-4.4-.5-1.4 0-2.7.1-4 .4-.4-1.4-.3-2.9 0-4.3.3-1.5 1-2.8 2-3.6.2-.1.3-.2.5-.4 2.3-1.4 4.9.2 5.8 3.5.4 1.8.4 3.5.1 4.9z"/><ellipse class="st4" cx="54.9" cy="35.3" rx="1.6" ry="2.4"/><path class="st2" d="M37.3 39.5c0 1.3-.3 2.6-.8 3.7-1.2-.6-2.5-1.1-3.9-1.4-1.4-.3-2.9-.5-4.4-.5-1.4 0-2.7.1-4 .4-1.4.3-2.8.8-4 1.3-.5-1.1-.7-2.3-.7-3.5 0-4.9 4-8.9 8.9-8.9s8.9 3.9 8.9 8.9z"/><path class="st3" d="M32.6 41.7c-1.4-.3-2.9-.5-4.4-.5-1.4 0-2.7.1-4 .4-.4-1.4-.3-2.9 0-4.3.3-1.5 1-2.8 2-3.6.2-.1.3-.2.5-.4 2.3-1.4 4.9.2 5.8 3.5.4 1.8.4 3.5.1 4.9z"/><ellipse class="st4" cx="24.9" cy="35.3" rx="1.6" ry="2.4"/><ellipse class="st3" cx="43.2" cy="59.5" rx="9" ry="3"/><g><ellipse class="st1" cx="50.7" cy="55.5" rx="8.5" ry="7"/><ellipse class="st1" cx="34.7" cy="55.5" rx="8.5" ry="7"/><path class="st3" d="M43.7 55.6c-.5.5-1.3.5-1.9 0L38.1 52l-2.2-2.1c-.9-.8-.3-2.3.9-2.3h12c1.2 0 1.8 1.5.9 2.3L47.4 52l-3.7 3.6z"/></g></svg>
+            </div>
+    </article>
+    <div class="blue-banner">
+        <h2 class="slideanim">Our Brands</h2>
+    </div>
+    <div id="brands" class="grid-tiles grid-side-padding">
+        <div class="brands-grid-tile slideanim" id="tile-acana">
+            <a href="https://acana.com/usa/"><img src="/brand-img/acana.png" alt="Acana"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-canidae">
+            <a href="https://www.canidae.com/"><img src="brand-img/canidae.png" alt="Canidae"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-daves">
+            <a href="https://davespetfood.com/"><img src="/brand-img/daves.png" alt="Dave's"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-earthborn">
+            <a href="https://www.earthbornholisticpetfood.com/"><img src="brand-img/earthborn.png" alt="Earthborn"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-evangers">
+            <a href="https://evangersdogfood.com/"><img src="/brand-img/evangers.png" alt="Evangers"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-fromm">
+            <a href="https://frommfamily.com/"><img src="brand-img/fromm.png" alt="Fromm"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-fussie">
+            <a href="https://www.fussiecat.com/?page_id=20&lang=en"><img src="brand-img/fussie-cat.png" alt="Fussie Cat"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-koha">
+            <a href="https://kohapet.com/"><img src="/brand-img/koha.png" alt="KOHA"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-n&d">
+            <a href="https://www.farmina.com/us/"><img src="brand-img/nnd.png" alt="N & D"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-nutrisource">
+            <a href="https://nutrisourcepetfoods.com/homepage"><img src="brand-img/nutrisource.png" alt="Nutrisource"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-orijen">
+            <a href="https://www.orijen.ca/us/"><img src="brand-img/orijen.png" alt="Orijen"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-solid">
+            <a href="https://www.solidgoldpet.com/"><img src="/brand-img/solid-gold.png" alt="Solid Gold"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-tow">
+            <a href="https://www.tasteofthewildpetfood.com/"><img src="brand-img/taste-of-the-wild.png" alt="Taste Of The Wild"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-weruva">
+            <a href="https://weruva.com/"><img src="/brand-img/weruva.png" alt="Weruva"></a>
+        </div>
+        <div class="brands-grid-tile slideanim" id="tile-zignature">
+            <a href="https://www.zignature.com/?page_id=5&lang=en"><img src="brand-img/zignature.png" alt="Zignature"></a>
+        </div>
+    </div>
+   
+    <div class="blue-banner">
+        <h2 class="slideanim">RAW</h2>
+    </div>
+    <div>
+        <div class="slideanim">
+            <h2>Benefits</h2>
+            <p class="side-padding">A raw diet is closest to a carnivore’s wild natural diet. Raw contains complete easily digestible protein and also provides a natural source of calcium and other nutrients. </p>
+        </div>
+        <div class="grid-tiles grid-side-padding">
+            <div class="brands-grid-tile slideanim" id="tile-brb">
+                <a href="https://blueridgebeef.com/"><img src="brand-img/brbeef.png" alt="Blue Ridge Beef"></a>
+            </div>
+            <div class="brands-grid-tile slideanim" id="tile-lucy">
+                <a href="https://www.grandmalucys.com/"><img src="/brand-img/grandma-lucys.png" alt="Grandma Lucy's"></a>
+            </div>
+            <div class="brands-grid-tile slideanim" id="tile-instinct">
+                <a href="https://www.instinctpetfood.com/"><img src="/brand-img/instinct.png" alt="Nature Variety Instinct"></a>
+            </div>
+            <div class="brands-grid-tile slideanim" id="tile-nwn">
+                <a href="https://nw-naturals.net/"><img src="/brand-img/northwest-naturals.png" alt="North West Naturals"></a>
+            </div>
+            <div class="brands-grid-tile slideanim" id="tile-primal">
+                <a href="https://primalpetfoods.com/"><img src="brand-img/primal.png" alt="Primal"></a>
+            </div>
+            <div class="brands-grid-tile slideanim" id="tile-stella">
+                <a href="https://www.stellaandchewys.com/"><img src="brand-img/stella.png" alt="Stella"></a>
+            </div>
+            <div class="brands-grid-tile slideanim" id="tile-sojo">
+                <a href="https://www.sojos.com/"><img src="/brand-img/sojos.png" alt="Sojos"></a>
+            </div>
+            <div class="brands-grid-tile slideanim" id="tile-honestkitchen">
+                <a href="https://www.thehonestkitchen.com/"><img src="brand-img/honest-kitchen.png" alt="The Honest Kitchen"></a>
+            </div>
+        </div>
+    </div>
+    <div class="side-padding center">
+        <h2 class="turquoise bunch-of-padding slideanim">Have Questions About Pet Nutrition?</h2>
+    </div>       
+    <!--Begin Footer-->
+    <div class="footer-top">
+        <h2 class="hidden-at-small negative-heading slideanim">
+            Ask An Expert
+        </h2>
+        <div id="small-map">
+            <iframe class="hide-at-large" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.4915677566673!2d-84.25011774947384!3d30.5071362816267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ec58c739bba885%3A0x7b9e785db9b05690!2sPaws+Pet+Boutique!5e0!3m2!1sen!2sus!4v1546305240759" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+            <div class="footer-grid some-side-padding">
+                <div class="phone slideanim" id="phone">
+                        <h2 id="phoneh2">Phone</h2>
+                        <h2 class="phoneNumber">850 - 222 - 7297</h2>        
+                </div>
+                <div id="map" class="hidden-at-small justify-centers map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.4915677566673!2d-84.25011774947384!3d30.5071362816267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ec58c739bba885%3A0x7b9e785db9b05690!2sPaws+Pet+Boutique!5e0!3m2!1sen!2sus!4v1546305240759" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="grooming-phone slideanim" id="grooming-phone">
+                    <h2>Grooming</h2>
+                    <h2 class="phoneNumber">850 - 509 - 5031</h2>
+                </div>
+                <div class="hours slideanim">
+                    <h2>Hours</h2>
+                    <ol>
+                        <li>Monday:    10AM - 7PM</li>
+                        <li>Tuesday:   10AM - 7PM</li>
+                        <li>Wednesday: 10AM - 7PM</li>
+                        <li>Thursday:  10AM - 7PM</li>
+                        <li>Friday:    10AM - 7PM</li>
+                        <li>Saturday:  10AM - 7PM</li>
+                        <li>Sunday:    11AM - 5PM</li>
+                    </ol>
+                </div>
+                <div class="location slideanim">
+                    <h2>Location</h2>
+                    <h3>3491 Thomasville Road <br>Tallahassee, FL</h3>
+                </div>
+            </div>
+            <section class="some-side-padding">
+                <div class="flex-row slideanim">
+                    <div class="footer-icons">
+                        <a href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><i class="fab fa-yelp"></i></a>
+                        <a href="https://www.facebook.com/pawsPetBoutiqueTallahasse/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex-row justify-right">
+                    <h6>&copy; 2019 JMLM Golden Enterprises LLC d/b/a Paws Pet Boutique</h6>
+    
+            </div>
+            </section>
+        </footer>
+    <!--End Footer-->
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135165830-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135165830-1');
+</script>
+
+
+
+<script src="stickyNav.js"></script>
+<script src="float-panel.js"></script>
+
+</body>
+</html>

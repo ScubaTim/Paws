@@ -1,70 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Welcome to Paws Pet Boutique! We are a family-owned Pet Store located in Tallahassee. Paws stocks the best quality Dog food and Cat food brands available at the best price possible. Visit us for expert advice and browse our huge selection of durable dog toys, cat toys, and natural remedies. Schedule a Grooming appointment with one of our Expert Groomers.">
     <link rel="stylesheet" type="text/css" href="output.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <title>Footer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+    <title>Paws Pet Boutique | Tallahassee</title>
 </head>
-<body class="footer-grid-container">
-    <header class="footer-header">
-        <h1>ASK AN EXPERT</h1>
-    </header>
-    <section class="footer-numbers">
-        <h2>Phone</h2>
-        <h2>850-222-7297</h2>
-        <h3>Grooming: 850-509-5031</h3>
-        <hr></hr>
-    </section>
-    <section class="footer-map">
-    </section>
-    <section class="footer-mobile-flexcont">
-        <div class="footer-hours">
-          <p>Hours:</p>
-            <ol>
-            <li>Monday: 10AM - 7PM</li>
-            <li>Tuesday: 10AM - 7PM</li>
-            <li>Wednesday: 10AM - 7PM</li>
-            <li>Thursday: 10AM - 7PM</li>
-            <li>Friday: 10AM - 7PM</li>
-            <li>Saturday: 10AM - 7PM</li>
-            <li>Sunday: 11AM - 5PM</li>
-            </ol>   
+<body>
+    <div class="wrapper">
+    <!--Begin Header-->
+        <!--Header For XL Screens-->
+        <header class="some-padding center hidden-at-small">
+            <div class="flex-column header-col margin-top">
+                <h3>850 - 222 - 7297</h3>
+                <div class="header-icons">
+                    <a href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><i class="fab fa-yelp"></i></a> 
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <img class="paws-logo margin-top" src="pawsLogo.svg" alt="Paws Pet Boutique Logo">
+
+            <div class="flex-column header-col  margin-top" id="address-full-screen">
+                <h3 class="justify-right">3491 Thomasville Rd<br>Tallahassee FL</h3>
+            </div>
+        </header>
+        <div class="nav flex-row neg-top-margin hidden-at-small" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="grooming.html">Grooming</a></li>
+                    <li><a href="http://www.paws.ws/dog-tags-sm.html">Tags</a></li>
+                </ul>
         </div>
-       <div class="footer-location">
-            <p>Location:</p>
-            <p>3491 Thomasville RD <br>Tallahassee FL 32309</p>
-       </div>
+        <!--Header for Small Screens Only-->
+        <header class="center hide-at-large some-side-padding">
+                <div class="flex-row sticky-nav space-around full-width">
+                        <div class="mobile-nav">
+                            <span class="open-slide">
+                                <a href="#" class="btn-open" onclick="openSlideMenu()"><i class="mobile-btn fas fa-bars" id="mobile-hamburger"></i></a>
+                            </span>
+                            <div class="side-nav" id="side-menu">
+                                <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                                <a href="index.html">Home</a>
+                                <a href="food.html">Food</a>
+                                <a href="grooming.html">Grooming</a>
+                                <a href="http://www.paws.ws/dog-tags-sm.html">Tags</a>
+                                <a href="#phone">Contact Us</a>
+                            </div>
+                        </div>
+                        <img  class="paws-logo" src="pawsLogo.svg" alt="Paws Pet Boutique logo">
+                    <div class="mobile-nav"> 
+                        <span class="open-slide">
+                                <a href="#" class="btn-open" onclick="openSlideMenuSocial()"><i class="mobile-btn fas fa-ellipsis-h" id="mobile-social"></i></a>
+                        </span>
+                        <div class="side-nav" id="side-menu-social">
+                            <a href="#" class="btn-close justify-right" onclick="closeSlideMenuSocial()">&times;</a>
+                            <div class="social-sidenav-flex-cont">
+                                <a class="zero-out" href="https://www.facebook.com/pawsPetBoutiqueTallahasse/"><i class="fab fa-facebook-square"></i></a>
+                                <a class="zero-out" href="https://www.facebook.com/pawsPetBoutiqueTallahasse/"><p class="half-width">Facebook</p></a>
+                            </div>
+                            <div class="social-sidenav-flex-cont">
+                                <a class="zero-out" href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><i class="fab fa-instagram"></i></a>
+                                <a class="zero-out" href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><p class="half-width">Instagram</p></a>  
+                            </div>
+                            <div class="social-sidenav-flex-cont">
+                                <a class="zero-out" href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><i class="fab fa-yelp"></i></a>
+                                <a class="zero-out" href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><p class="half-width">Yelp</p></a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <h2>850 - 222 - 7297</h2>
+                <p>3491 Thomasville Road<br>Tallahassee, Fl 32309</p>
+            </header>
+    <!--End Header-->
+
+    <!--Begin Carousel-->
+        <div class="hide-at-large mobile-carousel-image"></div>
+        <div class="main-banner hidden-at-small" id="main-banner">
+            <div class="img-ban" id="img-ban1" alt="Happy black and white border collie, outside with green background">
+                <p class="slider-text" id="slider-text1">Family Owned <br> Pet Loved</p>
+            </div>
+            <div class="img-ban" id="img-ban2" alt="chocolate lab puppy sitting outside with blurred forest background">
+                <p class="slider-text" id="slider-text2">All Inclusive <br> Full Service Grooming <br>850-509-5031</p>
+            </div>
+            <div class="img-ban" id="img-ban3" alt = "senior yellow lab fast alseep">
+                <p class="slider-text" id="slider-text3">CBD Oil & Natural Calming Aids</p>
+            </div>
+            <div class="img-ban" id="img-ban4" alt = "dog outside playing with water hose">
+                <p class="slider-text" id="slider-text4">Self Service Dog Wash</p>
+            </div>
+            <div class="img-ban" id="img-ban5" alt = "golden retriever outside with a solid green enable-background">
+                <p class="slider-text" id="slider-text5">Follow Us On Facebook and Instagram</p>
+            </div>
+        </div>
+    <!--End Carousel-->
+
+    <!--Begin About Us-->
+    <main class="side-padding">
+            <h1 class="center zero-out slideanim">Paws Pet Boutique</h1>
+            <h3 class="center zero-out turquoise slideanim">Your Local Tallahassee Pet Supply Store Since 2007</h3>
+                   
+    <article class="left slideanim">
+            <div class="heading">
+                <h2>Our Promise</h2>
+                <svg class="pawprint-svg" alt = "turquoise paw print" viewBox="0 0 153 160" width="auto" height="auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M137.21 85.5586C138.175 87.5524 139.368 89.0966 139.666 91.2914C141.526 99.8698 134.104 107.82 132.858 109.719C124.647 118.669 119.401 114.539 110.54 122.542C103.136 129.345 105.61 133.93 97.7844 139.336C95.9947 140.638 87.6079 146.594 77.9229 143.422C76.2736 142.777 71.0978 141.292 67.4134 136.31C63.2903 131.08 62.9395 125.093 62.8693 122.448C62.4308 114.965 65.5364 114.409 66.098 106.624C66.7999 96.8918 62.2908 95.2053 63.5191 87.2189C64.7474 79.2325 70.4673 74.0803 72.5903 72.6784C74.2747 71.0281 79.205 66.8756 86.6267 66.1606C93.7151 65.5461 94.5396 69.4862 104.681 71.759C115.699 74.5289 117.419 70.5832 125.104 74.3584C126.858 75.3524 132.999 78.8317 137.21 85.5586Z" fill="#00A7E1"/>
+                    <path d="M51.2897 98.5232C62.659 107.28 62.6061 117.958 56.2019 124.459C51.3768 128.961 41.2005 128.983 31.8138 120.771C22.4271 112.559 17.7602 99.4958 21.0589 93.5506C24.7085 86.3572 40.0257 90.1154 51.2897 98.5232Z" fill="#00A7E1"/>
+                    <path d="M24.3581 73.1349C31.4462 86.9909 45.0789 92.3995 51.7637 89.2411C58.0099 85.8342 61.9753 72.4528 54.9925 58.9459C47.9044 45.09 32.8857 36.2913 26.6395 39.6982C20.3933 43.1051 17.7087 59.5275 24.3581 73.1349Z" fill="#00A7E1"/>
+                    <path d="M84.4691 26.4465C95.154 36.5521 93.5923 51.8743 88.4163 57.624C83.5737 63.2732 72.5026 63.9464 61.8176 53.8408C51.1327 43.7352 44.8693 26.5841 49.7119 20.9349C54.8879 15.1852 73.7841 16.3409 84.4691 26.4465Z" fill="#00A7E1"/>
+                    <path d="M97.5578 52.9633C102.119 65.6772 114.296 72.2867 118.524 70.6306C122.753 68.9746 131.982 58.5754 128.859 45.8084C124.683 29.5509 106.454 20.9589 99.7514 25.265C96.1721 27.8677 93.1014 40.5985 97.5578 52.9633Z" fill="#00A7E1"/>
+                </svg>
+            </div>
+            <div class="image two-thirds-width auto-margin">
+                <svg class="animal-svg" xmlns="http://www.w3.org/2000/svg" width="201.5" height="175.8"><path fill="#7A5743" d="M24.2 22.5C10.3 36.9 1.6 48.1 6.8 53.5S29 56.4 43 41.9 82.9 12.8 77.8 7.5c-5.2-5.4-39.6.5-53.6 15z"/><path fill="#42210B" d="M76.5 4.5c-11.2 5.6-37.4 9.2-48.6 14.8C17.4 32.4 11.1 47.4.6 60.6 1.8 51.2 3 41.9 4.3 32.5c1-8.7 2-17.4 2.9-26.1 10.2-.5 20.4-1 30.6-1.6 9.2-.2 29.4-.1 38.7-.3z"/><path fill="#7A5743" d="M172.1 22.5c14 14.5 22.6 25.6 17.4 31-5.2 5.4-22.2 2.9-36.2-11.6s-39.9-29.1-34.8-34.4c5.3-5.4 39.7.5 53.6 15z"/><path fill="#42210B" d="M119.9 4.5c11.2 5.6 37.4 9.2 48.6 14.8 10.5 13.2 22 28.2 32.4 41.4-1.2-9.4-3.5-18.9-5.3-29v-.2c-1.9-7.5-3.9-13.6-6.4-25.1-10.2-.5-20.4-1-30.6-1.6-9.2-.2-29.4-.1-38.7-.3z"/><path fill="#EDC28E" d="M178.3 83.6c0 87.3-115.4 127.3-152.9 39C8.3 82.4 19.3 30 60.5 9.7c55.3-27.2 117.8 13.6 117.8 73.9z"/><path fill="#FFFEF0" d="M172.9 117.3c-1 2.8-2 5.5-3.2 8.1-2.4 5.3-5.2 10.2-8.4 14.8-1.6 2.3-3.2 4.4-5 6.5-.2.2-.4.5-.6.7-.2.2-.3.4-.5.6 0 .1-.1.1-.1.2-8.9 10.1-19.8 17.8-32 22.3-8.2 2.8-16.6 4.3-24.7 4.4-4.3 0-8.1-.3-11.1-.7-.2 0-.4-.1-.6-.1-3.2-.5-6.3-1.2-9.3-2.1-.1 0-.1 0-.2-.1-5.9-2-19.2-7.3-31.2-18.5-3.5-3.3-6.6-6.9-9.6-10.8-3.2-4.3-6-8.9-8.4-13.8-.1-.1-.1-.3-.2-.4 0-.1-.1-.2-.1-.2-.4-.8-.8-1.5-1.1-2.3-.2-.3-.3-.6-.4-.9-.5-1.1-1-2.3-1.5-3.5-.1-.4-.3-.7-.4-1.1-.4-1.2-.9-2.4-1.3-3.6 8.7-23.7 27.1-40.3 50.3-47 7.5-2.1 15.6-3.3 24-3.3s16.5 1.1 24.1 3.3c12 3.4 22.9 9.5 31.9 17.8 8.5 8 15.3 18 19.6 29.7z"/><path fill="#7A5743" d="M26.7 125.9c-.2-.3-.4-1-.6-1.4 27.9-57.3 116.1-55.4 143.7 1.1-27.1 59.8-117.9 67.3-143.1.3z"/><path fill="#42210B" d="M35.7 141.9c12.1-15.7 24.3-30.8 44.8-34.6 11.4-2.1 23.3-2 34.6.3 10.1 2.1 18 7.1 25.7 13.7 3.5 3 6.8 6.1 10.1 9.3 1.5 1.5 3.1 2.9 4.6 4.4.9.9 1.8 1.8 2.6 2.7 2.2 2.3 2.5 1.8 1.2 4.4-1.4 2.8-4.2 5.1-6.3 7.4-3.7 3.9-7.4 7.8-11.7 11-15.3 11.5-36.8 16.2-55.6 13.4-20.5-3-37.5-15.9-50-32zM51.7 50.9C62.2 38.1 81.8 54.3 71.3 67s-30.1-3.4-19.6-16.1z"/><path fill="#0A0A0A" d="M61.5 50.8C72 50.8 72 67 61.5 67s-10.5-16.2 0-16.2z"/><circle fill="#F7F6F5" cx="66" cy="53.5" r="3.7"/><path fill="#42210B" d="M124.5 51c10.5-12.7 30.1 3.4 19.6 16.2s-30-3.5-19.6-16.2z"/><circle fill="#0A0A0A" cx="134.4" cy="59" r="8.1"/><circle fill="#F7F6F5" cx="138.8" cy="53.6" r="3.7"/><path fill="#42210B" d="M77.6 79.7c0 5.9 9.9 13.8 22.2 13.8S119 85.6 119 79.7 112.1 72 99.8 72s-22.2 1.8-22.2 7.7z"/><path fill="#ED9DF9" d="M98.3 100.2c23.4 0 23.4 14 0 14s-23.4-14 0-14z"/><path fill="#FFF" d="M81.3 109.8c-.9 1.7-11.9 3.8-13.3 2.6-1.7-1.5 1.7-22.4 3-22.6 1.3-.3 11.4 17.9 10.3 20zM128.9 113.5c-1.5 1.1-12.3-2.4-13-4.1-.9-2.2 11.7-19.1 13-18.7 1.3.4 2 21.5 0 22.8z"/></svg>            </div>
+            <div class="copy">
+                <p>We stock only the best quality pet food and toy brands available, and offer them at an affordable price - because every pet deserves a natural and healthy diet.</p>
+            </div>
+    </article>
+        <article class="right slideanim">
+            <div class="heading">
+                <svg class="pawprint-svg" alt = "turquoise paw print" viewBox="0 0 153 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M137.21 85.5586C138.175 87.5524 139.368 89.0966 139.666 91.2914C141.526 99.8698 134.104 107.82 132.858 109.719C124.647 118.669 119.401 114.539 110.54 122.542C103.136 129.345 105.61 133.93 97.7844 139.336C95.9947 140.638 87.6079 146.594 77.9229 143.422C76.2736 142.777 71.0978 141.292 67.4134 136.31C63.2903 131.08 62.9395 125.093 62.8693 122.448C62.4308 114.965 65.5364 114.409 66.098 106.624C66.7999 96.8918 62.2908 95.2053 63.5191 87.2189C64.7474 79.2325 70.4673 74.0803 72.5903 72.6784C74.2747 71.0281 79.205 66.8756 86.6267 66.1606C93.7151 65.5461 94.5396 69.4862 104.681 71.759C115.699 74.5289 117.419 70.5832 125.104 74.3584C126.858 75.3524 132.999 78.8317 137.21 85.5586Z" fill="#00A7E1"/>
+                    <path d="M51.2897 98.5232C62.659 107.28 62.6061 117.958 56.2019 124.459C51.3768 128.961 41.2005 128.983 31.8138 120.771C22.4271 112.559 17.7602 99.4958 21.0589 93.5506C24.7085 86.3572 40.0257 90.1154 51.2897 98.5232Z" fill="#00A7E1"/>
+                    <path d="M24.3581 73.1349C31.4462 86.9909 45.0789 92.3995 51.7637 89.2411C58.0099 85.8342 61.9753 72.4528 54.9925 58.9459C47.9044 45.09 32.8857 36.2913 26.6395 39.6982C20.3933 43.1051 17.7087 59.5275 24.3581 73.1349Z" fill="#00A7E1"/>
+                    <path d="M84.4691 26.4465C95.154 36.5521 93.5923 51.8743 88.4163 57.624C83.5737 63.2732 72.5026 63.9464 61.8176 53.8408C51.1327 43.7352 44.8693 26.5841 49.7119 20.9349C54.8879 15.1852 73.7841 16.3409 84.4691 26.4465Z" fill="#00A7E1"/>
+                    <path d="M97.5578 52.9633C102.119 65.6772 114.296 72.2867 118.524 70.6306C122.753 68.9746 131.982 58.5754 128.859 45.8084C124.683 29.5509 106.454 20.9589 99.7514 25.265C96.1721 27.8677 93.1014 40.5985 97.5578 52.9633Z" fill="#00A7E1"/>
+                </svg>
+                <h2>Expert Advice</h2>
+            </div>
+            <div class="image two-thirds-width auto-margin">
+                <svg class="animal-svg" xmlns="http://www.w3.org/2000/svg" width="192.6" height="159.5"><path fill="#434242" d="M75.1 30.6c-11 7.8-22.3 15.6-33.5 23.5-11.2 7.8-22.5 15.7-33.9 23.7C.3 68.1-.6 52.4.8 36.6c.7-9.7 2.4-19.2 3.7-27.7C6 1.5 13.2-1.8 19.8 1c7.6 3.4 16.4 6.7 24.7 10.1 13.8 5.6 26.2 11.5 30.6 19.5z"/><path fill="#F37579" d="M17.8 57.1c-7.9-10.6-2.7-32.2-1.3-45.3 11.6 6.8 32.2 11.4 36.8 19.7-11.7 8.4-23.5 16.9-35.5 25.6z"/><path fill="#333" d="M113.4 29.4c11 7.9 22.2 15.8 33.3 23.8s22.3 16 33.5 24.1c6.1-7.4 8-21.8 9.3-37.3.8-9.3 1.4-19.1 2.5-27.7.8-7.4-4.7-13.3-12.4-11.9-8.8 1.7-18.8 3.8-28.4 6.5-15.8 4.8-30.7 11.5-37.8 22.5z"/><path fill="#F37579" d="M172.7 56.6c6.4-7.8 4.5-29.6 7.9-43.4-13.5 3.4-36.2 6.5-43.9 18.2 12 8.3 24 16.7 36 25.2z"/><path fill="tan" d="M192.6 97.2c0 31.4-43.6 62.3-96.9 62.3S0 128.6 0 97.2s43.1-79.1 96.2-79.1c53.2 0 96.4 47.6 96.4 79.1z"/><path fill="#333" d="M180.5 94.9c0 27.5-37 50.3-83.6 50.3s-85.2-22.8-85.2-50.3 37.8-69.2 84.4-69.2 84.4 41.8 84.4 69.2z"/><path fill="#F7F0F0" d="M151.2 92.7c-4.2 8.8-18.9 8.2-24.1 7.9-5.2-.2-14.2-.7-18.8-7.3-3.1-4.4-2.7-9.4-2.6-10.9.8-9.6 9.7-19.1 20.3-20 .5 0 .9-.1 1.5-.1 4.4 0 8.1 1.6 11 3.4 3.4 2.3 5.8 5.1 7 6.6.2.2.2.3.3.5.9 1.1 4.9 6.4 6 12.1.7 2.7.6 5.3-.6 7.8z"/><path fill="#09C" d="M151.9 85c-2.5 7.2-8.3 12.3-15.2 12.3-9.1 0-16.4-8.8-16.4-19.8 0-6.1 2.3-11.5 5.8-15.1.5 0 .9-.1 1.5-.1 4.4 0 8.1 1.6 11 3.4 3.4 2.3 5.8 5.1 7 6.6.2.2.2.3.3.5 1 1.3 5 6.5 6 12.2z"/><path fill="#036" d="M146.6 77.8c0 6.8-4.5 12.3-10.1 12.3s-10.1-5.5-10.1-12.3 4.5-12.3 10.1-12.3c.7 0 1.5.1 2.2.2 3.4 2.3 5.8 5.1 7 6.6.5 1.7.9 3.5.9 5.5z"/><path fill="#F7F0F0" d="M119.3 76.9c2.7 0 4.9-.9 4.9-2s-2.2-2-4.9-2-4.9.9-4.9 2 2.2 2 4.9 2zM83.3 92.7c-4.2 8.8-18.9 8.2-24.1 7.9-5.2-.2-14.2-.7-18.8-7.3-3.1-4.4-2.7-9.4-2.6-10.9.8-9.6 9.7-19.1 20.3-20 .5 0 .9-.1 1.5-.1 4.4 0 8.1 1.6 11 3.4 3.4 2.3 5.8 5.1 7 6.6.2.2.2.3.3.5.9 1.1 4.9 6.4 6 12.1.6 2.7.5 5.3-.6 7.8z"/><path fill="#09C" d="M84.1 85c-2.4 7.2-8.3 12.2-15.2 12.2-9.1 0-16.4-8.8-16.4-19.8 0-6.1 2.3-11.5 5.8-15.1.5 0 .9-.1 1.5-.1 4.4 0 8.1 1.6 11 3.4 3.4 2.3 5.8 5.1 7 6.6.2.2.2.3.3.5.9 1.4 4.9 6.6 6 12.3z"/><path fill="#036" d="M78.7 77.8c0 6.8-4.5 12.3-10.1 12.3s-10.1-5.5-10.1-12.3S63 65.5 68.6 65.5c.7 0 1.5.1 2.2.2 3.4 2.3 5.8 5.1 7 6.6.6 1.7.9 3.5.9 5.5z"/><path fill="#F7F0F0" d="M51.3 76.9c2.7 0 4.9-.9 4.9-2s-2.2-2-4.9-2-4.9.9-4.9 2c.1 1.1 2.2 2 4.9 2z"/><path fill="#F37579" d="M105.8 102.7c0 1.8-5.2 5.6-11.7 5.6s-11.7-3.8-11.7-5.6 5.2-2.3 11.7-2.3c6.4.1 11.7.5 11.7 2.3z"/><path d="M110.1 127.3c-4.2 0-6.3-2.6-8.1-4.9-1.8-2.2-3.3-4-6.3-4s-4.4 1.8-6.2 4c-1.9 2.3-4 5-8.2 5-8.1 0-11.8-4.8-15.4-9.4-.4-.5-.3-1.3.2-1.7s1.3-.3 1.7.2c4.1 5.3 7.1 8.5 13.5 8.5 3.1 0 4.6-1.9 6.3-4 1.8-2.3 3.9-4.9 8.1-4.9s6.4 2.6 8.2 4.9c1.7 2.1 3.2 4 6.2 4 6.5 0 9.6-3.3 13.5-8.4.4-.5 1.2-.6 1.7-.2.5.4.6 1.2.2 1.7-4.2 5.4-7.7 9.2-15.4 9.2z"/></svg>
+            </div>
+            <div class="copy">
+                <p>All of our staff are experts in natural dog food, cat food, and toys, as well as natural remedies and pet health.</p>
+            </div>
+
+        </article>
+        <p class="bottom-margin slideanim">Our Groomers are rated #1 in Tallahassee for a reason. Call to schedule an appointment and see the Paws Pet Boutique difference!</p>
+
+    </main>
+    <!--End About Us-->
+
+    <!--Begin Brands-->
+
+    <div class="blue-banner">
+        <h2 class="slideanim" id="food">Our Brands</h2>
+    </div>
+    <section class="bottom-margin some-side-padding">
+        <div class="flex-col slideanim">
+                    <p>Paws carries the most premium dog and cat food available, sourced only from countries and companies known for their impeccable pet food quality standards. We are committed to making natural, healthy pet food affordable for everyone.</p>
+                    <h3 class="bold">Paws beats the prices of most popular online and big-box pet store chains.</h3>
+        </div>
+        <div class="grid-tiles">
+                <div class="brands-grid-tile slideanim" id="tile-brb">
+                    <a href="https://blueridgebeef.com/"><img src="brand-img/brbeef.png" alt="Blue Ridge Beef"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-canidae">
+                    <a href="https://www.canidae.com/"><img src="brand-img/canidae.png" alt="Canidae"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-earthborn">
+                    <a href="https://www.earthbornholisticpetfood.com/"><img src="brand-img/earthborn.png" alt="Earthborn"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-fromm">
+                    <a href="https://frommfamily.com/"><img src="brand-img/fromm.png" alt="Fromm"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-n&d">
+                    <a href="https://www.farmina.com/us/"><img src="brand-img/nnd.png" alt="N & D"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-nutrisource">
+                    <a href="https://nutrisourcepetfoods.com/homepage"><img src="brand-img/nutrisource.png" alt="Nutrisource"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-orijen">
+                    <a href="https://www.orijen.ca/us/"><img src="brand-img/orijen.png" alt="Orijen"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-primal">
+                    <a href="https://primalpetfoods.com/"><img src="brand-img/primal.png" alt="Primal"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-stella">
+                    <a href="https://www.stellaandchewys.com/"><img src="brand-img/stella.png" alt="Stella"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-tow">
+                    <a href="https://www.tasteofthewildpetfood.com/"><img src="brand-img/taste-of-the-wild.png" alt="Taste Of The Wild"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-honestkitchen">
+                    <a href="https://www.thehonestkitchen.com/"><img src="brand-img/honest-kitchen.png" alt="The Honest Kitchen"></a>
+                </div>
+                <div class="brands-grid-tile slideanim" id="tile-zignature">
+                    <a href="https://www.zignature.com/?page_id=5&lang=en"><img src="brand-img/zignature.png" alt="Zignature"></a>
+                </div>
+        </div>
+        <div class="center button auto-width slideanim more-button"><a href="http://www.pawstallahassee.com/food.html#brands">More</a></div>
     </section>
-    <section class="footer-icons">
-        <hr>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-yelp"></i>
-        <i class="fab fa-instagram"></i>
-        <hr>
-    </section>
-    <section class="footer-site-map">
-        <ul>
-            <li>Blog</li>
-            <li>Cat Food</li>
-            <li>Collars & Leashes</li>
-            <li>Donate</li>
-            <li>Dog Food</li>
-            <li>Events</li>
-            <li>Flea & Tick</li>
-            <li>Grooming</li>
-            <li>Pet of the Month</li>
-            <li>Self Wash</li>
-            <li>Suppliments</li>
-            <li>Tags</li>
-            <li>Treats</li>
-            <li>Toys</li>
-        </ul>
-    </section>
-    <section class="footer-copyrite">
-        <p>Copyrite 2018. All Rights Reserved. [T&M] Productions &copy;</p>
-    </section>
+    <!--End Brands-->
+    
+    <!--Begin Free Samples-->
+
+    <div class="blue-banner" id="free-samples">
+        <h2 class="slideanim">Free Samples</h2>
+    </div>
+    <div class="side-padding" id="free-samples-article">
+        <div class="flex-row slideanim" id="mobile-flex">
+            <div class="flex-col image">
+                <svg class="half-width animal-svg"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="auto" height="auto" viewBox="0 0 200 133.7" enable-background="new 0 0 200 133.7" xml:space="preserve">
+                       <g>
+                           <path d="M30.1,88.1"/>
+                           <path fill="#F4EDC6" d="M156.6,43.2C169.7,113.8,53,134.9,39.9,65C26.9-4.9,143.4-27.5,156.6,43.2z"/>
+                           <path fill="#F4EDC6" d="M143.2,102c0,41.5-90.1,41.4-89.8,0C53.6,60.5,143.2,60.6,143.2,102z"/>
+                           <path d="M124.3,92.6c3.6,22.7-56,23.1-52.3,0C74.5,76,121.6,76,124.3,92.6z"/>
+                           <g>
+                               <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M98.7,110c1.7,15.8,23.4,16.2,31.9,5.8"/>
+                               <path fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M98,110.1c-2.3,15.6-24,15.7-32.1,4.8"/>
+                           </g>
+                           <g>
+                               <path d="M82.1,50.5c0,13.6-12.4,13.6-12.4,0C69.6,37.5,82.1,35.7,82.1,50.5z"/>
+                               <path fill="#FFFFFF" d="M73.6,43.2c0.9-2.3,2-2.4,3.2-0.2C75.8,45.3,74.8,45.4,73.6,43.2z"/>
+                           </g>
+                           <g>
+                               <path d="M124.5,50c0,13.6-12.4,13.6-12.4,0C112.1,37,124.5,35.2,124.5,50z"/>
+                               <path fill="#FFFFFF" d="M116,42.7c0.9-2.3,2-2.4,3.2-0.2C118.3,44.8,117.2,44.9,116,42.7z"/>
+                           </g>
+                           <path fill="#DDD6AB" d="M38.9,88.7c-4.6,0.7-35.3-44-36.8-49.2c-7.8-26.9,46-36.2,66.1-32.2c-13.8,11.5-22.6,26.4-26,44.1
+                               C41.6,54.7,41.9,88.2,38.9,88.7z"/>
+                           <path fill="#DDD6AB" d="M199,33.6c1.1-9.9-24.5-21-32.3-23.8c-11.7-4.2-24.8-4.8-36.9-2.3c12.7,10.6,21.4,24.2,25.1,40.4
+                               c1,4.1,1.7,40.7,4.2,41.1C164.9,89.9,198.2,40.5,199,33.6"/>
+                       </g>
+                </svg>
+            </div>
+            <div class="flex-col" id="new-pet-owner">
+                <p class="bold">New pet owner?</p> 
+                <p>Finding the perfect dog food or cat food for your furry friend can be a challenge. Nutrition is vital to ensuring a long and healthy life for your pet, but with so many options and so much information to digest, how are you supposed to be able to choose?</p>
+            </div>
+        </div>
+        <div class="bottom-margin slideanim" id="paws-help">
+            <p class="center bold">Paws Pet Boutique is here to help!</p>
+            <p>We are happy to provide sample-sized amounts of all of our most popular pet food brands free of charge so that you can find the perfect match for even picky eaters!</p>
+        </div>
+    </div>
+    <!--End Free Samples-->
+
+    <!--Begin Footer-->
+    <div class="footer-top">
+        <h2 class="hidden-at-small negative-heading slideanim">
+            Ask An Expert
+        </h2>
+        <div id="small-map">
+            <iframe class="hide-at-large" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.4915677566673!2d-84.25011774947384!3d30.5071362816267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ec58c739bba885%3A0x7b9e785db9b05690!2sPaws+Pet+Boutique!5e0!3m2!1sen!2sus!4v1546305240759" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-grid some-side-padding">
+            <div class="phone slideanim" id="phone">
+                    <h2 id="phoneh2">Phone</h2>
+                    <h2 class="phoneNumber">850 - 222 - 7297</h2>        
+            </div>
+            <div id="map" class="hidden-at-small justify-centers map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.4915677566673!2d-84.25011774947384!3d30.5071362816267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ec58c739bba885%3A0x7b9e785db9b05690!2sPaws+Pet+Boutique!5e0!3m2!1sen!2sus!4v1546305240759" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="grooming-phone slideanim" id="grooming-phone">
+                <h2>Grooming</h2>
+                <h2 class="phoneNumber">850 - 509 - 5031</h2>
+            </div>
+            <div class="hours slideanim">
+                <h2>Hours</h2>
+                <ol>
+                    <li>Monday:    10AM - 7PM</li>
+                    <li>Tuesday:   10AM - 7PM</li>
+                    <li>Wednesday: 10AM - 7PM</li>
+                    <li>Thursday:  10AM - 7PM</li>
+                    <li>Friday:    10AM - 7PM</li>
+                    <li>Saturday:  10AM - 7PM</li>
+                    <li>Sunday:    11AM - 5PM</li>
+                </ol>
+            </div>
+            <div class="location slideanim">
+                <h2>Location</h2>
+                <h3>3491 Thomasville Road <br>Tallahassee, FL</h3>
+            </div>
+        </div>
+        <section class="some-side-padding">
+            <div class="flex-row slideanim">
+                <div class="footer-icons">
+                    <a href="https://www.yelp.com/biz/paws-pet-boutique-tallahassee?osq=paws+pet+boutique"><i class="fab fa-yelp"></i></a>
+                    <a href="https://www.facebook.com/pawsPetBoutiqueTallahasse/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/pawspetboutiquetallahassee/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="flex-row justify-right">
+                <h6>&copy; 2019 JMLM Golden Enterprises LLC d/b/a Paws Pet Boutique</h6>
+
+        </div>
+        </section>
+    </footer>
+    <!--End Footer-->
+
+    
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135165830-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135165830-1');
+        </script>
+
+    <script src="mainBannerScript.js"></script>
+    <script src="stickyNav.js"></script>
+    <script src="float-panel.js"></script>
 </body>
 </html>
